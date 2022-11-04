@@ -32,11 +32,7 @@ const Main: React.FC = () => {
 
   //validation of full name
   useEffect(() => {
-    if(fullName.length >= 3) {
-      setValidName(true)
-    } else {
-      setValidName(false)
-    }
+    setValidName(fullName.length >= 3)
   },[fullName])
 
   //validation of email address
@@ -48,11 +44,7 @@ const Main: React.FC = () => {
 
   //validation of email and email confirmation
   useEffect(() => {
-    if(email === confirmEmail) {
-      setValidConfirmation(true)
-    } else {
-      setValidConfirmation(false)
-    }
+    setValidConfirmation(email === confirmEmail)
   }, [confirmEmail])
 
   function openModal() {
