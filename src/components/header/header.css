@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 4%) 0px 4px 4px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fcffe6;
+  }
+
+  .logo__content {
+    padding: 1rem 6rem;
+  }
+
+  @media screen and (max-width: 550px) {
+
+    .header {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .logo__content {
+      padding: 1rem 1rem;
+    }
+  }
