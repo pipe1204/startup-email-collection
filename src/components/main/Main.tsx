@@ -112,7 +112,7 @@ const Main: React.FC = () => {
               </div>
               <form className='register__form'>
                 <h2>Request an invite!</h2>
-                <p data-testid="error" style={{visibility: fullName && !validName ? "visible" : "hidden"}} className="validation__message">Full name must have 3 characthers or more</p>
+                <p data-testid="error" style={{visibility: fullName && !validName ? "visible" : "hidden"}} className="validation__message">Full name must have 3 or more letters</p>
                 <input 
                   ref={inputRef}
                   type="text" 
